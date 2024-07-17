@@ -1,0 +1,40 @@
+<html>
+<head>
+    
+    
+    
+</head>
+<body>
+
+<p id="day">00</p>
+<p id="hours">00</p>
+<p id="minutes">00</p>
+<p id="seconds">00</p>
+<script>
+    
+var coun=new Date(" Dec 26,2024 00:00:00").getTime();
+var x=setInterval(function(){
+    var now=new Date().getTime();
+    var dist=coun-now;
+    var day=Math.floor(dist/(1000*60*60*24));
+    var hour=Math.floor((dist%(1000*60*60*24))/(1000*60*60));
+   var minutes=Math.floor((dist%(1000*60*60))/(1000*60));
+    var seconds=Math.floor((dist%(1000*60))/(1000));
+
+
+
+document.getElementById("day").innerHTML=day;
+document.getElementById("hours").innerHTML=hour;
+document.getElementById("minutes").innerHTML=minutes;
+document.getElementById("seconds").innerHTML=seconds;
+    },1000)
+</script>
+
+
+</body>
+
+
+
+
+
+</html>

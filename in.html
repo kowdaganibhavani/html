@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>hello</title>    
+
+    
+</head>
+<input type="text" id="cls">
+<input type="password" id="word">
+    <div class="any" ></div>  
+<!--<p id="sus">succesfull</p>-->
+<button id="btn" onclick="fun()">add</button>
+<script>
+const cls=document.getElementById("cls");
+const word=document.getElementById("word");
+const any=document.querySelector(".any");
+let sun=document.querySelectorAll(".sun")
+const btn=document.getElementById("btn");
+function fun()
+    {
+     let sun=document.createElement("P");
+ /    sun.className="sun";
+     any.appendChild(sun);
+     
+     if(cls.value==word.value){
+      sun.innerHTML="succes"; 
+     }
+     else
+     {
+         sun.innerHTML="fail"
+     }    
+    }
+    
+    
+    
+</script>
+</html>

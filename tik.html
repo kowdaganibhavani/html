@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>hello</title>
+<style>
+span
+{
+margin-left:20px;
+}
+
+
+ 
+</style>
+</head>
+<body>
+
+<input type="text" id="inputbox" placeholder="enter anything">
+
+
+<button onclick="addtask()">add</button>
+<ul id="listcontainer">
+<!--<li>happy</li>
+<li>sad</li>-->
+</ul>
+
+<script>
+const inputboxs=document.getElementById("inputbox");
+const listcontainers=document.getElementById("listcontainer");
+function addtask()
+{
+if(inputboxs.value =='')
+{
+alert("hey write something");
+}
+else
+{
+const li=document.createElement("li");
+li.innerHTML=inputboxs.value;
+listcontainers.appendChild(li);
+const span=document.createElement("span");
+span.innerHTML="\u00d7";
+li.appendChild(span);
+inputboxs.value="";
+}
+
+}
+ listcontainers.addEventListener("click",function(e)
+{
+if(e.target.tagName=="LI")
+{
+e.target.classList.toggle("checked");
+}
+else if(e.target.tagName=="SPAN"){
+e.target.parentElement.remove();
+}
+},false)
+</script>
+</body>
+</html>

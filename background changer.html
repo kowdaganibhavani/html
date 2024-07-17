@@ -1,0 +1,55 @@
+<html>
+<head>
+<style>
+    #gi{
+     width:70%;
+    margin:auto;
+    line-height: 0;
+    overflow: hidden;
+    position:relative;
+    }
+    
+    
+    
+#li
+    {
+        position:absolute;
+        left:0;
+        top:0;
+        
+    }
+</style>
+
+</head>
+<body>
+<img src="rainy" id="gi" >
+<img src="sunny" id="li" >
+
+<script>
+let rainy=document.getElementById("gi");
+let sunny=document.getElementById("li");
+sunny.style.width=rainy.offsetWidth+"px";
+var leftspace=rainy.offsetLeft;
+rainy.onmousemove=function(e){
+    var bxwidth=(e.pageX-leftspace)+"px";
+    sunny.style.width=bxwidth;
+}
+    
+    
+    
+</script>
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>

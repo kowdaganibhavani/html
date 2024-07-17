@@ -1,0 +1,36 @@
+<html>
+<head>
+<style>
+.inputbox
+{
+width:80%;
+height:50%;
+background-color:blue;
+}
+</style>
+</head>
+<body>
+<h1>note book</h1>
+<button class="btn">create notes</button>
+<div class="list">
+<!--<p contenteditable="true" class="inputbox"></p>
+-->
+</div>
+
+<script>
+const button = document.querySelector(".btn");
+const list = document.querySelector(".list");
+let inputbox = document.querySelectorAll(".inputbox");
+button.addEventListener("click", ()=>{
+let ptag = document.createElement("p");
+ptag.className  = "inputbox";
+ptag.setAttribute("contenteditable", "true");
+list.appendChild(prag);
+})
+
+
+
+
+</script>
+</body>
+</html>

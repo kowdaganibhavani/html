@@ -1,0 +1,24 @@
+<html>
+<head>
+
+</head>
+<body>
+<h1>quote generator</h1>
+<div class="gr">loading</div>
+<button onclick="fun(api)">new quote</button>
+<script>
+const gr=document.querySelector(".gr");
+const api="https://api.quotable.io/random";
+ async function fun(url){
+   
+    const response=await fetch(url);
+    var data=await response.json();
+    gr.innerHTML=data.content;
+    
+}
+
+
+</script>
+</body>
+
+</html>

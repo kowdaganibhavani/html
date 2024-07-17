@@ -1,0 +1,123 @@
+<html>
+<head>
+<style>
+    body
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height:100vh;
+    }
+    .continer{
+        padding:10px;
+        background-color: blue
+      ;
+       
+        
+    }
+    .continer form input
+    {
+    width:100px;
+    height:50px;
+    box-shadow: 2px 1px 5px 4px;
+    background: transparent;
+    }
+    #bus{
+      
+        width:100%;
+        box-shadow: none;
+        border:0;
+        padding-top:20px;
+        font-size:20px;
+        color:white;
+    }
+    
+     
+    
+    
+    
+    
+    
+    </style>   
+    
+</head>
+<body>
+<div class="continer">
+   
+    <form>
+        <div>
+        <input type="text" id="bus"></div>
+         <div>
+        <input type="button" value="AC" onclick="bus.value = ''">
+         <input type="button" value="DE">
+             <input type="button" value=".">
+             <input type="button" value="/">
+        </div>
+        
+        <div>
+        <input type="button" value="7" onclick="bus.value += '7'">
+         <input type="button" value="8" onclick="bus.value += '8'">
+             <input type="button" value="9" onclick="bus.value += '9'">
+             <input type="button" value="*" onclick="bus.value += '*'">
+        </div>
+         <div>
+        <input type="button" value="4">
+         <input type="button" value="5">
+             <input type="button" value="6">
+             <input type="button" value="-">
+        </div>
+         <div>
+        <input type="button" value="1">
+         <input type="button" value="2">
+             <input type="button" value="3">
+             <input type="button" value="+">
+        </div>
+         <div>
+        <input type="button" value="00">
+         <input type="button" value="0">
+             <input type="button" value="=" onclick="bus.value = eval(bus.value)">
+            
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        </form></div>    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

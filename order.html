@@ -1,0 +1,47 @@
+<html>
+<head>
+    <style>
+        #jj:checked + span{
+        color:red;    
+        }
+
+       
+    
+    </style>
+    
+    
+</head>
+<body>
+<img src="sunny" id="kk">
+<input type="radio" name=
+       "size" id="jj"><span>x</span>
+<input type="radio" name="size" id="j"><span>xl</span>
+<script>
+
+const kk=document.getElementById("kk");
+const jj=document.getElementById("jj");
+const j=document.getElementById("j");
+                            
+jj.onclick=function(){
+    
+
+kk.src="rainy";
+
+}
+j.onclick=function(){
+    kk.src="sun";
+}
+</script> 
+    
+    
+</body>
+
+
+
+
+
+
+
+
+
+</html>

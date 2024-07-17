@@ -1,0 +1,45 @@
+<html>
+<head>
+<style>
+    img
+ {
+     width:60px;
+     height:30px;
+    }
+    </style>
+</head>
+<body>
+<h1 id="dis">00:00:00</h1>
+<img src="rainy" id="rai">
+<img src="sunny" id="sin" onclick="stp()">
+<img src="cloud" id="clo">
+<script>
+let[seconds,minutes,hours]=[0,0,0];
+const display=document.getElementById("dis");
+function stopwatch(){
+    seconds++;
+    if(seconds == 60){
+        seconds = 0;
+        minutes++;
+        if(minutes == 60){
+            minutes = 0;
+            hours++;
+            }
+    }
+}
+
+function stp(){
+    setInterval(stopwatch,1000);
+}    
+    
+    
+    
+</script>
+    
+    
+    
+    
+    
+    
+</body>  
+</html>

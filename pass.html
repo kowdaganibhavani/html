@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>pass</title>
+<style>
+.hello{
+       
+    }    
+    
+    
+</style>    
+    
+</head>
+<body>
+<input type="text" placeholder="enter" class="inp">
+<button class="btn" onclick="fun()">add</button>
+<div class="cls"></div>
+<script>
+const input = document.querySelector(".inp");
+const btn = document.querySelector(".btn");
+const cls = document.querySelector(".cls");
+let hello=document.querySelectorAll(".hello");
+function fun()
+    {
+        let varn = document.createElement("input");
+        varn.className="hello";
+        varn.setAttribute("contenteditable","true");
+        cls.appendChild(varn);
+        
+    }
+    
+    
+    
+
+    
+    
+</script>
+</body>
+</html>

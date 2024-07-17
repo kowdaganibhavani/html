@@ -1,0 +1,61 @@
+<html>
+<head>
+<style>
+.cl
+    {
+
+    top:50%;
+    left: 50%;
+    }
+
+</style>
+
+
+</head>
+<body><div class="cl">
+<p id="sec">00</p><p>:</p>   
+<p id="min">00</p><p>:</p>
+    <p id="hr">00</p></div>
+    
+    
+<script>
+let sec=document.getElementById("sec");
+let min=document.getElementById("min");
+let hr=document.getElementById("hr");
+function fun(){
+var date=new Date();
+sec.innerHTML=date.getSeconds();
+min.innerHTML=date.getMinutes();
+hr.innerHTML=date.getHours();
+}
+setInterval(fun,1000);    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</script>
+    
+    
+    
+    
+    
+    </body>
+
+
+
+
+
+
+</html>

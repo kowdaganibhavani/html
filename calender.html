@@ -1,0 +1,54 @@
+<html>
+<head>
+<style>
+    .fi
+    {
+    width:300px;
+    height:300px;
+    display: flex;
+    
+    justify-content: center;
+    }
+    .right,.left{
+        width:50%;
+       
+    }
+    
+    
+    
+</style>
+
+</head>
+<body><div class="fi"><div class="left">
+<div class="sin">12</div>
+    <div class="tan">monday</div></div>
+<div class="right">
+<div class="cos">january</div>
+<div class="cot">2023</div>
+    </div>
+    
+    </div>
+<script>
+const date=document.querySelector(".sin"),
+day=document.querySelector(".tan"),
+mon=document.querySelector(".cos"),
+yr=document.querySelector(".cot");
+
+const getsday=["sunday","monday","tuesday"];
+const monst=["january","feb","mar","apr","may","june","july","aug","sep","oct","nov","dec"];
+    
+const today=new Date();
+date.innerHTML=today.getDate();
+day.innerHTML=getsday[today.getDay()];
+mon.innerHTML=monst[today.getMonth()];
+yr.innerHTML=today.getFullYear();
+    
+
+</script>
+
+
+
+
+
+    </body>
+</html>-

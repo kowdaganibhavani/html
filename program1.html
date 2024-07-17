@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jio</title></head>
+<body>
+    
+    <h1>hlo</h1>
+    <div class="ji"></div>
+    <script>
+    function fun(){
+    var vin=new Date();
+    var cl=vin.getDay();
+    
+    var los=vin.getHours();
+    var jin=vin.getMinutes();
+    var lin=vin.getSeconds();
+    
+      
+        
+  lin=(lin<10)?"0"+lin:lin;
+    console.log(los+":"+jin+":"+lin);
+        
+    }
+        function sun(){
+            setInterval(fun,1000);
+        }
+    sun();
+    
+    
+    
+    </script>
+    
+    </body>
+
+</html>

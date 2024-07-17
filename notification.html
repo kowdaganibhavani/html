@@ -1,0 +1,46 @@
+<html>
+<head><style>
+    .mis{
+        position: absolute;
+        bottom:30px;
+        right:30px;
+        display:flex;
+        flex-direction: column;
+        
+        
+
+     
+        
+    
+    }
+    .tos{
+        border:1px solid black;
+        padding:0 40px;
+        animation: anime 5s linear forwards;
+    }
+    </style>
+</head>
+<body>
+<button onclick="fun(succes)">submit</button>
+<button onclick="fun(error)"
+>error</button>
+<button onclick="fun(invalid)">invalid</button>
+<div class="mis"></div>
+<script>
+const mis=document.querySelector(".mis");
+const nis=document.querySelector("nis");
+let succes="succesful";
+let error="errormsg";
+let invalid="inavlied msg"
+function fun(msg){
+    const his=document.createElement("div");
+    his.classList.add("tos");
+    his.innerHTML=msg;
+    mis.appendChild(his);
+    
+}
+</script>
+
+</body>
+
+</html>

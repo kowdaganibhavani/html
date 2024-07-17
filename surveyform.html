@@ -1,0 +1,94 @@
+<html>
+<head>
+<title> survey form</title>
+<style>
+body
+{
+background-color:lightgreen;
+text-align:center;
+}
+h1
+{
+padding:20px 0 0 0;
+font-size:35px;
+color:red;
+}
+form
+{
+width:450px;
+margin:50px auto;
+padding:30px 20px;
+background-color:white;
+box-shadow:3px 2px 3px black;
+}
+.control input,
+.control select,
+.control textarea
+{
+width:95%;
+border:2px solid black;
+padding:10px;
+display:block;
+}
+.control label{
+display:block;
+margin-bottom:1px;
+}
+.control
+{
+text-align:left;
+margin-bottom:25px;
+}
+.control input[type="radio" ],
+.control input[type="checkbox" ]
+{
+display:inline-block;
+width:auto;
+}
+button
+{
+width:100%;
+display:block;
+background-color:green;
+padding:10px;
+margin-top:50px;
+margin-bottom:20px;
+transition:1s; 
+}
+
+
+</style>
+</head>
+<body>
+<h1>greeks for greeks survey form</h1>
+<center><form><fieldset>
+<div class="control"><label>name</label><br>
+<input type="text" placeholder="enter ur name" size="50"></div></div>
+<div class="control"><label>email</label><br>
+<input type='text' placeholder='enter ur email'
+></div><br>
+<div class="control"><label>age</label><br>
+<input type="text" placeholder="enter ur age"size="50"></div><br>
+<div class="control"><label>which option discribes you best?</label><br>
+<select><option value="student" size="50">student</option>
+<option value="professional" size="50">professional</option>
+<option value="intern" size="50">intern</option>
+</select></div><br>
+<div class="control"><label>would you recommand greeks  for greeks to a friend?</label><br>
+<input type ="radio" id="yes">yes<br>
+<input type="radio" >no<br>
+<input type="radio">maybe</div><br>
+<div class="control"><label>languages and frameworks known(check all that apply)</label><br>
+<input type="checkbox">c<br>
+<input type="checkbox">c++<br>
+<input type="checkbox">java<br>
+<input type="checkbox">python<br>
+<input type="checkbox">javascript<br>
+<input type="checkbox">html<br>
+<input type="checkbox">css<br></div>
+<div class="control"><label>any comment or suggestion</label><div><br>
+<div class="control"><textarea></textarea></div><br>
+<div class="control"><button>submit</button></div>
+</fieldset></form></center>
+</body>
+</html>

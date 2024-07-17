@@ -1,0 +1,12 @@
+<html>
+<head>
+<script>
+functin my()
+{
+document.getElementById("fi").innerHTML="hi hello ma"
+}
+<body>
+<p id="fi">hi bro</p>
+<button type="button" onclick="my()">click</button>
+</body>
+</html>
